@@ -1,19 +1,19 @@
-let React = require("react");
+var React = require("react");
 
-let Input = React.createClass({
+var Input = React.createClass({
     getDefaultProps: function() {
         return {width: ""};
     },
 
     render: function() {
-        let className = this.props.width.replace("/", "-");
+        var className = this.props.width.replace("/", "-");
 
         return (
-            <div className={"inputGroup " + className}>
-                {this.props.children}
-                <span>{this.props.label}</span>
-            </div>
-        )
+            React.createElement("div", {className: "inputGroup " + className, children: [
+                this.props.children,
+                React.createElement("span", {children: this.props.label})
+            ]});
+        );
     }
 });
 
