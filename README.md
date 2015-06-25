@@ -1,0 +1,1 @@
+A very simple React input wrapper for a personal project. I feel like it should be part of the project repository, but it needs to be an npm package.
