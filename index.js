@@ -8,12 +8,10 @@ var Input = React.createClass({
     render: function() {
         var className = this.props.width.replace("/", "-");
 
-        return (
-            React.createElement("div", {className: "inputGroup " + className, children: [
-                this.props.children,
-                React.createElement("span", {children: this.props.label})
-            ]});
-        );
+        return React.createElement("div", {className: "inputGroup " + className, children: [
+            this.props.children,
+            React.createElement("span", {children: this.props.label})
+        ]});
     }
 });
 
