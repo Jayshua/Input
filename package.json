@@ -1,0 +1,15 @@
+{
+    "name": "Input",
+    "version": "0.0.1",
+    "description": "A very simple input wrapper for a personal project.",
+    "main": "index.js",
+    "author": "Jayshua Nelson",
+    "repository": {
+        "type": "git",
+        "url": "https://jayshua@github.com/jayshua/input.git"
+    },
+
+    "peerDependencies": {
+        "react": "^0.13.3"
+    }
+}
