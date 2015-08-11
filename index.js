@@ -6,7 +6,8 @@ var Input = React.createClass({
     },
 
     render: function() {
-        var className = this.props.width.replace("/", "-");
+        // Add s to satisfy css class name guidelines
+        var className = "s" + this.props.width.replace("/", "-");
 
         return React.createElement("div", {className: "inputGroup " + className, children: [
             this.props.children,
